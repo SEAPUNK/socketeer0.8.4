@@ -1,0 +1,16 @@
+Server
+---
+
+_dbg = debug
+
+options:
+  heartbeatTimeout
+  heartbeatInterval
+  handshakeTimeout
+  supportsResuming
+  resumeAllowsDifferentIPs
+  maxSessionAge
+
+data
+
+_wss[events]Handler
