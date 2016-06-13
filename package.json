@@ -1,0 +1,43 @@
+{
+  "name": "socketeer",
+  "version": "0.8.4-pre0",
+  "description": "yet another websocket framework",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "npm run lint",
+    "test:ava": "ava",
+    "lint": "npm run lint:src",
+    "lint:src": "standard src/**/*.js",
+    "lint:test": "standard --parser babel-eslint test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/SEAPUNK/socketeer"
+  },
+  "keywords": [
+    "socket",
+    "websocket",
+    "realtime",
+    "io",
+    "events",
+    "session",
+    "resume"
+  ],
+  "author": "Ivan K <ivan@sq10.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SEAPUNK/socketeer/issues"
+  },
+  "homepage": "https://github.com/SEAPUNK/socketeer#readme",
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "babel-eslint": "^6.0.4",
+    "standard": "^7.1.2"
+  }
+}
