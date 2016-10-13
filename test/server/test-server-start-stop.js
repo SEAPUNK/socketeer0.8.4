@@ -18,7 +18,7 @@ test('Server should correctly create and remove listeners for servers', (t) => {
 
   server.listen(ee)
   ee.emit('headers')
-  server.stop(ee)
+  server.stopListening(ee)
   ee.emit('headers')
 })
 
@@ -41,6 +41,14 @@ test('Server should allow starting of server after stopping', (t) => {
   const ee = new EventEmitter()
   const server = new Server()
   server.listen(ee)
-  server.stop(ee)
+  server.stopListening(ee)
   server.listen(ee)
+})
+
+test('Server.start should be the same thing as Server.listen', (t) => {
+  const ee = new EventEmitter()
+  const server = new Server()
+  server.start(ee)
+  server.stopListening(ee)
+  server.start(ee)
 })
