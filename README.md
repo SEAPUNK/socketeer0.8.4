@@ -1,6 +1,8 @@
 socketeer
 ===
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/SEAPUNK/socketeer0.8.4.svg)](https://greenkeeper.io/)
+
 yet another websocket framework
 
 ---
